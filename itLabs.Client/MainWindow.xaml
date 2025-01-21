@@ -5,6 +5,11 @@
         WindowState="Maximized"
         ResizeMode="NoResize"
         Background="#121212"  WindowStyle="ToolWindow">
+
+    <Window.Resources>
+        
+    </Window.Resources>
+
     <Grid>
         <Frame x:Name="MainFrame" 
                NavigationUIVisibility="Hidden" />
