@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using itLabs.Client;
+using System.Windows;
 
 namespace itLabs
 {

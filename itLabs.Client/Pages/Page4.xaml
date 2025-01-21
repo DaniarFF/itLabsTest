@@ -1,0 +1,99 @@
+﻿<Page x:Class="itLabs.Client.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:itLabs.Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page4">
+
+    <Grid>
+        <Viewbox Stretch="Uniform">
+            <Canvas Width="2728" Height="1824" Background="#FF121212">
+                
+                <!--Изображения-->
+                <Image Height="1824" Canvas.Left="574" Source="/img5.png" Width="577" />
+                <Image Height="1824" Source="/img6.png" Stretch="Fill" Width="577" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+                <!--Лого IWT-->
+                <Canvas>
+                    <Path Fill="#FFFFFF"
+                      Data="M268.718 122.017C267.669 62.242 219.4 13.9701 159.634 12.9234V0H155.662V12.9234C95.2313 13.9815 46.5458 63.3114 46.5458 124C46.5458 184.69 95.2313 234.022 155.662 235.081V248H159.634V235.081C219.4 234.031 267.676 185.758 268.718 125.979H289.049L290.357 122.017H268.718ZM202.279 124C202.279 124.662 202.262 125.328 202.243 125.979H222.077C221.046 160.002 193.664 187.401 159.634 188.428V168.589C182.7 167.574 201.226 149.049 202.227 125.979H155.662V188.428C120.981 187.383 93.1713 158.943 93.1713 124C93.1713 89.0622 120.981 60.6234 155.662 59.5737V122.017H202.227C201.223 98.9473 182.7 80.4276 159.634 79.414V59.5737C193.656 60.6018 221.046 87.997 222.077 122.017H202.243C202.262 122.675 202.279 123.332 202.279 124ZM159.634 39.7281V59.5562C158.969 59.5395 158.31 59.5158 157.639 59.5158C156.983 59.5158 156.324 59.5395 155.662 59.5562V39.7281C110.022 40.7913 73.3288 78.1089 73.3288 124C73.3288 169.893 110.022 207.21 155.662 208.272V188.445C156.324 188.468 156.983 188.484 157.639 188.484C158.31 188.484 158.969 188.468 159.634 188.445V208.272C204.61 207.219 240.876 170.96 241.917 125.979H264.753C263.707 183.559 217.217 230.059 159.634 231.108V208.291C158.969 208.311 158.304 208.314 157.639 208.314C156.989 208.314 156.324 208.312 155.662 208.291V231.108C97.4208 230.049 50.5141 182.494 50.5141 124C50.5141 65.5059 97.4208 17.9477 155.662 16.8906V39.7075C156.324 39.692 156.989 39.6838 157.639 39.6838C158.304 39.6838 158.969 39.6916 159.634 39.7075V16.8906C217.214 17.9414 263.707 64.4335 264.753 122.017H241.917C240.876 77.0437 204.61 40.7769 159.634 39.7281Z"
+                      Canvas.Left="107.466" Canvas.Top="46.838" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#000000"
+                      Data="M274.008 107.199L252.047 173.594H206.47L228.435 107.199H202.014L206.231 94.5694L161.924 173.594H117.8L120.691 145.681L106.663 173.594H62.3331L71.2521 95.1527L45.3255 173.594H6.10352e-05L32.7897 74.4001H112.243L107.567 104.592L123.131 74.4001H165.521L161.743 105.968L177.394 74.4001H311.344L300.404 107.199H274.008Z"
+                      Canvas.Left="108.466" Canvas.Top="61.725" HorizontalAlignment="Center"
+                      VerticalAlignment="Center" />
+                    <Path Fill="#FFBA00"
+                      Data="M216.515 79.3602L208.885 102.242H235.303L213.338 168.644H248.458L270.427 102.242H296.835L304.463 79.3602H216.515Z"
+                      Canvas.Left="107.913" Canvas.Top="62.725" HorizontalAlignment="Center"
+                      VerticalAlignment="Center" />
+                    <Path Fill="#FFBA00"
+                      Data="M180.478 79.3602L153.399 133.978L159.938 79.3602H126.151L97.9927 133.978L106.46 79.3602H78.0365L67.8941 168.644H103.605L128.418 119.271L123.309 168.644H159.017L209.06 79.3602H180.478Z"
+                      Canvas.Left="107.854" Canvas.Top="60.475" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#FFBA00" Data="M36.3701 79.3602L6.862 168.644H41.7366L71.2521 79.3602H36.3701Z"
+                      Canvas.Left="107.466" Canvas.Top="60.8" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                </Canvas>
+
+                <!--Лого Red-->
+                <Canvas>
+                    <Path Fill="#B9211C"
+                      Data="M242.863 85.2236C242.863 89.2825 242.831 122.604 243.272 126.248C244.544 136.765 253.207 145.439 263.669 146.821C269.099 147.539 278.318 146.996 284.146 146.996C291.377 146.996 342.94 147.385 345.355 146.852V46.8507L322.829 46.8406L322.917 124.402C315.837 124.379 268.903 125.05 266.268 124.126C265.689 122.203 266.012 111.188 266.016 108.183H305.93L305.935 85.3006L242.864 85.2236H242.863Z"
+                      Canvas.Left="691.623" Canvas.Top="96.207" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#B9211C"
+                      Data="M45.4081 146.925L68.202 146.993L68.1847 71.7947C68.1694 69.6919 68.1948 70.001 68.6496 69.5654C70.2667 68.0171 119.76 69.9946 125.146 69.0465L125.177 46.4806C122.789 46.1901 83.7859 46.4087 80.3131 46.4087C73.4547 46.4087 65.4937 45.6356 59.7358 48.3397C54.5683 50.7666 50.6002 54.5137 48.0567 59.3288C44.7444 65.599 45.4081 71.3704 45.4081 78.9818V146.925Z"
+                      Canvas.Left="691.623" Canvas.Top="96.207" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#B9211C"
+                      Data="M145.391 107.106L145.443 108.184L224.678 108.182L224.734 85.3657L194.413 85.2844L145.391 85.2234V107.105V107.106Z"
+                      Canvas.Left="691.623" Canvas.Top="96.207" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#B9211C"
+                      Data="M145.396 69.7996C146.237 68.7865 152.947 69.2248 154.564 69.2248H204.734C210.729 69.2248 219.016 69.703 224.733 69.1543L224.727 46.5704C221.707 46.2043 172.574 46.3727 165.172 46.3727C161.744 46.3727 147.135 47.073 145.406 45.8698L145.396 69.7996Z"
+                      Canvas.Left="691.623" Canvas.Top="96.207" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                    <Path Fill="#B9211C"
+                      Data="M145.391 146.995L224.732 146.925L224.733 124.341C222.029 124.015 162.127 124.253 154.565 124.253C152.137 124.253 146.891 124.807 145.405 123.641L145.391 124.898V146.995H145.391Z"
+                      Canvas.Left="691.623" Canvas.Top="96.207" HorizontalAlignment="Center"
+                      VerticalAlignment="Top" />
+                </Canvas>
+
+                <!--Кнопки посмотреть PDF-->
+                <Button Content="Посмотреть PDF - файл" Canvas.Left="77" Canvas.Top="1600" Height="123" Width="423"
+                    Background="{x:Null}"
+                    BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24" Cursor="Hand" />
+                <Button Content="Посмотреть PDF - файл" Canvas.Left="651" Canvas.Top="1600" Height="123" Width="423"
+                    Background="{x:Null}"
+                    BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24" Cursor="Hand" />
+
+                <!--Главный текст-->
+                <TextBlock FontSize="75" FontFamily="Montserrat" FontWeight="ExtraBold" TextWrapping="Wrap"
+                       Foreground="#F3F3F3" Canvas.Left="1386" Canvas.Top="325" TextAlignment="Center" Width="1072" FontStyle="Italic"><Run Text="Ф"/><Run Language="ru-ru" Text="АЙЛ УСПЕШНО ОТПРАВЛЕН"/></TextBlock>
+
+                <!--Подзаголовок-->
+                <TextBlock FontSize="45" FontFamily="Montserrat" TextWrapping="Wrap"
+                       Foreground="#FF7D7D7D" Canvas.Left="1454" Canvas.Top="539" TextAlignment="Center" Width="1004"
+                       Text="Также вы можете скачать каталог себе на телефон, отсканировав этот QR-код"
+                       LineStackingStrategy="BlockLineHeight" />
+        
+                <!--Изображения QR кодов-->
+                <Image Height="497" Canvas.Left="1396" Source="/img8.png" Stretch="Fill" Canvas.Top="803" Width="496"/>
+                <Image Height="496" Canvas.Left="2043" Source="/img9.png" Stretch="Fill" Canvas.Top="803" Width="496" />
+                
+                <TextBlock FontSize="45" FontFamily="Montserrat"
+                    Foreground="#FF7D7D7D" Canvas.Left="1528" Canvas.Top="1345" TextAlignment="Center"
+                    Width="232"
+                    Text="IWT" RenderTransformOrigin="0.424,0.372" />
+                <TextBlock FontSize="45" FontFamily="Montserrat" TextWrapping="Wrap"
+                    Foreground="#FF7D7D7D" Canvas.Left="2139" Canvas.Top="1345" TextAlignment="Center"
+                    Width="304"
+                    Text="RED" />
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</Page>
