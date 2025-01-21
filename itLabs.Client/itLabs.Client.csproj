@@ -20,34 +20,34 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="img1.png">
+    <Resource Include="Images\img1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img2.png">
+    <Resource Include="Images\img2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img3.png">
+    <Resource Include="Images\img3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img4.png">
+    <Resource Include="Images\img4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img5.png">
+    <Resource Include="Images\img5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img6.png">
+    <Resource Include="Images\img6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img8.png">
+    <Resource Include="Images\img8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="img9.png">
+    <Resource Include="Images\img9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="Page3.xaml">
+    <Page Update="Pages\Page3.xaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
   </ItemGroup>
