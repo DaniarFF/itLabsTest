@@ -91,11 +91,11 @@
                 <Button Content="Посмотреть PDF - файл" Canvas.Left="1646" Canvas.Top="1561" Height="123" Width="423"
                         Background="{x:Null}"
                         BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24"
-                        HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand" />
                 <Button Content="Посмотреть PDF - файл" Canvas.Left="2228" Canvas.Top="1561" Height="123" Width="423"
                         Background="{x:Null}"
                         BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24"
-                        HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.529,0.495" />
+                        HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.529,0.495" Cursor="Hand" />
 
                 <!--Заголовок-->
                 <TextBlock FontSize="75" FontFamily="Montserrat" FontWeight="ExtraBold" TextWrapping="Wrap"

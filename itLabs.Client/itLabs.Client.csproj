@@ -13,6 +13,10 @@
     <None Remove="img2.png" />
     <None Remove="img3.png" />
     <None Remove="img4.png" />
+    <None Remove="img5.png" />
+    <None Remove="img6.png" />
+    <None Remove="img8.png" />
+    <None Remove="img9.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +30,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="img4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

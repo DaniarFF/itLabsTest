@@ -63,7 +63,7 @@ public partial class Page3 : Page
 
       await Task.Delay(500);
 
-      NavigationService.Navigate(new Page2());
+      NavigationService.Navigate(new Page4());
     }
     else
     {
