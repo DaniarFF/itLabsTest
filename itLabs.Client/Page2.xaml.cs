@@ -19,7 +19,7 @@ public partial class Page2 : Page
     { "thirdTextBox", "E-mail" }
   };
 
-  private readonly Dictionary<string, string> _userInput = new();
+  private Dictionary<string, string> _userInput = new();
 
   public Page2()
   {

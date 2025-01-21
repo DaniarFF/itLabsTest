@@ -58,19 +58,23 @@
                 </TextBlock>
                 
                 <!--Кнопка перехода на следующую страницу-->
-                <Button Canvas.Left="732" Canvas.Top="1054" Height="286" Width="1264" FontFamily="Montserrat Medium" FontSize="48" 
+                <Button Canvas.Left="732" Canvas.Top="1054" Height="286" Width="1264" 
+                        FontFamily="Montserrat Medium" FontSize="48" 
                         BorderBrush="White" Foreground="White" HorizontalAlignment="Center" 
                         VerticalAlignment="Top" Background="#FF121212" BorderThickness="2,2,2,2"
-                        Click="NavigateToPage2">
-                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Montserrat Light" 
-                               Width="933" FontSize="80" Foreground="#FFB5B5B5" OpacityMask="White">
-                        <Run Text="Нажмите на экран,"/><LineBreak/>
-                        <Run Text="чтобы продолжить"/></TextBlock>
+                        Click="NavigateToPage2" Cursor="Hand">
+
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="150" />
                         </Style>
                     </Button.Resources>
+                    
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontFamily="Montserrat Light" 
+                               Width="933" FontSize="80" Foreground="#FFB5B5B5" OpacityMask="White">
+                        <Run Text="Нажмите на экран,"/><LineBreak/>
+                        <Run Text="чтобы продолжить"/></TextBlock>
+                    
                 </Button>
                 
             </Canvas>
