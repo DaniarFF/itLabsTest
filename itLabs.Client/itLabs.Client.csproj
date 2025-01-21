@@ -11,11 +11,8 @@
   <ItemGroup>
     <None Remove="img1.png" />
     <None Remove="img2.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
-    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <None Remove="img3.png" />
+    <None Remove="img4.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +22,18 @@
     <Resource Include="img2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="img3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Page3.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
 
 </Project>
