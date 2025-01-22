@@ -1,30 +1,28 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
 
-namespace itLabs
+namespace itLabs;
+
+/// <summary>
+///   Логика взаимодействия для первой страницы приложения
+/// </summary>
+public partial class Page1 : Page
 {
   /// <summary>
-  ///  Логика взаимодействия для первой страницы приложения
+  ///   Конструктор
   /// </summary>
-  public partial class Page1 : Page
+  public Page1()
   {
-    /// <summary>
-    ///  Конструктор
-    /// </summary>
-    public Page1()
-    {
-      InitializeComponent();
-    }
+    InitializeComponent();
+  }
 
-    /// <summary>
-    ///  Переход на вторую страницу
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void NavigateToPage2(object sender, RoutedEventArgs e)
-    {
-      NavigationService.Navigate(new Page2());
-    }
+  /// <summary>
+  ///   Переход на вторую страницу
+  /// </summary>
+  /// <param name="sender"></param>
+  /// <param name="e"></param>
+  private void NavigateToPage2(object sender, RoutedEventArgs e)
+  {
+    NavigationService.Navigate(new Page2());
   }
 }

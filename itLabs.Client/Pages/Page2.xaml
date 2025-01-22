@@ -122,7 +122,7 @@
                        HorizontalAlignment="Center" VerticalAlignment="Center" Width="1154"
                        Foreground="Red" FontFamily="Montserrat"
                        FontSize="24" FontWeight="Light" Visibility="Hidden" />
-
+                
             </Canvas>
         </Viewbox>
     </Grid>

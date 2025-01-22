@@ -131,6 +131,7 @@
                 <Button Canvas.Left="493" Canvas.Top="1602"
                         Width="567" Height="60" BorderBrush="{x:Null}"
                         Click="SendMessageWithCodeButton_Click" Background="#05000000" Cursor="Hand" />
+                
             </Canvas>
         </Viewbox>
     </Grid>
