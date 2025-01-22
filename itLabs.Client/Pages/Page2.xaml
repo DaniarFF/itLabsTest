@@ -12,8 +12,8 @@
             <Canvas Width="2728" Height="1824" Background="#FF121212">
 
                 <!--Изображения-->
-                <Image Height="1824" Canvas.Left="577" Source="/img1.png" Width="577" />
-                <Image Height="1824" Source="/img2.png" Stretch="Fill" Width="577" />
+                <Image Height="1824" Canvas.Left="577" Source="/Images/img1.png" Width="577" />
+                <Image Height="1824" Source="/Images/img2.png" Stretch="Fill" Width="577" />
 
                 <!--Лого IWT-->
                 <Canvas>
@@ -55,14 +55,14 @@
                 </Canvas>
 
                 <!--Кнопки посмотреть PDF-->
-                <Button Content="Посмотреть PDF - файл" Canvas.Left="77" Canvas.Top="1601" Height="123" Width="423"
+                <Button Content="Посмотреть PDF - файл" Canvas.Left="77" Canvas.Top="1601" Height="123" Width="423" 
                         Background="{x:Null}"
                         BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24"
-                        HorizontalAlignment="Left" VerticalAlignment="Center" />
+                        HorizontalAlignment="Left" VerticalAlignment="Center" Cursor="Hand" BorderThickness="1,1,1,1"/>
                 <Button Content="Посмотреть PDF - файл" Canvas.Left="654" Canvas.Top="1601" Height="123" Width="423"
                         Background="{x:Null}"
                         BorderBrush="#FFFBB911" Foreground="#FFFBB911" FontFamily="Montserrat SemiBold" FontSize="24"
-                        HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.529,0.495" />
+                        HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.529,0.495" Cursor="Hand"/>
 
                 <!--Заголовок-->
                 <TextBlock FontSize="75" FontFamily="Montserrat" FontWeight="ExtraBold"
@@ -78,8 +78,7 @@
                            HorizontalAlignment="Left" VerticalAlignment="Top" Width="836"
                            Text="Заполните форму и мы вышлем вам его на электронную почту"
                            LineStackingStrategy="BlockLineHeight" />
-
-
+ 
                 <!--Текстбоксы формы заявки-->
                 <TextBox Name="firstTextBox" Text="Фамилия, Имя, Отчество" Style="{StaticResource MainTextBoxStyle}"
                          Canvas.Left="1426" Canvas.Top="750" HorizontalAlignment="Center" VerticalAlignment="Top"
@@ -115,7 +114,7 @@
                 <Button Content="Подтвердить данные"
                         Canvas.Left="1426" Canvas.Top="1413" Height="207"
                         Width="1171" Style="{StaticResource YellowButton}" RenderTransformOrigin="0.529,0.495"
-                        Click="SubmitButton_Click" />
+                        Click="SubmitButton_Click" Cursor="Hand" />
 
                 <!--Текст возможных ошибок ввода-->
                 <Label Name="FailMessage" Content="Пожалуйста, заполните все поля корректно"

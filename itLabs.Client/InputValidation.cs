@@ -21,7 +21,7 @@ public class InputValidation
 
   /// <summary>
   ///   Проверяет корректность номера телефона.
-  ///   Номер должен соответствовать формату: +7 999 999 99 99.
+  ///   Номер должен соответствовать формату: +79999999999.
   /// </summary>
   /// <param name="phoneNumber">Номер телефона для проверки.</param>
   /// <returns>True, если номер корректен.</returns>
@@ -30,7 +30,7 @@ public class InputValidation
     if (string.IsNullOrWhiteSpace(phoneNumber))
       return false;
 
-    var pattern = @"^\+7 \d{3} \d{3} \d{2} \d{2}$";
+    var pattern = @"^\+7\d{3}\d{3}\d{2}\d{2}$";
     return Regex.IsMatch(phoneNumber, pattern);
   }
 

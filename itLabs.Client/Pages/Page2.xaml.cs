@@ -1,9 +1,13 @@
-﻿using System;
+﻿using itLabs.Client;
+using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using itLabs.Client;
 
 namespace itLabs;
 
@@ -19,11 +23,20 @@ public partial class Page2 : Page
     { "thirdTextBox", "E-mail" }
   };
 
-  private readonly Dictionary<string, string> _userInput = new();
+  private Dictionary<string, string> _userInput = new Dictionary<string, string>();
+  private HttpClient _httpClient;
+
+  private readonly string token = "htfIEhF8E3zOb8SmXBqRCDxxzcLKNHCI2ex2LICyj20";
+
+  private readonly string serverUri = "https://localhost:7165/api/customer";
 
   public Page2()
   {
     InitializeComponent();
+    _httpClient = new HttpClient
+    {
+      BaseAddress = new Uri(serverUri)
+    };
   }
 
   /// <summary>
@@ -31,7 +44,7 @@ public partial class Page2 : Page
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>
-  private void SubmitButton_Click(object sender, RoutedEventArgs e)
+  private async void SubmitButton_Click(object sender, RoutedEventArgs e)
   {
     var isValid = true;
 
@@ -51,7 +64,11 @@ public partial class Page2 : Page
       }
     }
 
-    if (isValid) NavigateAndSaveData(sender, e);
+    if (isValid)
+    {
+      var request = CreateCustomerRequest();
+      await NavigateAndSaveData(sender, e, request);
+    }
   }
 
   /// <summary>
@@ -87,7 +104,7 @@ public partial class Page2 : Page
         if (!inputValidation.ValidatePhoneNumber(textBox.Text))
         {
           textBox.BorderBrush = Brushes.Red;
-          ShowMessage("Некорректно введен телефон. Формат: +7 999 999 99 99.", Brushes.Red);
+          ShowMessage("Некорректно введен телефон. Формат: +79999999999.", Brushes.Red);
           return false;
         }
 
@@ -107,23 +124,48 @@ public partial class Page2 : Page
     return true;
   }
 
+  private NewCustomerRequest CreateCustomerRequest()
+  {
+    _userInput.TryGetValue("firstTextBox", out string? name);
+    _userInput.TryGetValue("secondTextBox", out string? phone);
+    _userInput.TryGetValue("thirdTextBox", out string? mail);
+
+    var userData = new NewCustomerRequest()
+    {
+      Email = mail,
+      Name = name,
+      Phone = phone
+    };
+
+    return userData;
+  }
+
   /// <summary>
   ///  Переход на третью страницу
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>
-  private void NavigateAndSaveData(object sender, RoutedEventArgs e)
+  private async Task NavigateAndSaveData(object sender, RoutedEventArgs e, NewCustomerRequest newCustomerRequest)
   {
-    try
+    var jsonData = JsonSerializer.Serialize(newCustomerRequest);
+    var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+    var request = new HttpRequestMessage(HttpMethod.Post, serverUri);
+    request.Headers.Add("x-api-key", token);
+    request.Content = content;
+
+    var response = await _httpClient.SendAsync(request);
+
+    if (response.IsSuccessStatusCode)
     {
       NavigationService.Navigate(new Page3());
-      SaveData(_userInput);
     }
-    catch (Exception ex)
+    else
     {
       var message = "Ошибка при отправке данных";
       ShowMessage(message, Brushes.Red);
     }
+
   }
 
   /// <summary>
@@ -142,9 +184,6 @@ public partial class Page2 : Page
     }
   }
 
-  private void SaveData(Dictionary<string, string> userInput)
-  {
-  }
 
   /// <summary>
   ///  Обрабатывает событие получения фокуса пользователя текстовым полем.
