@@ -1,5 +1,4 @@
-﻿using itLabs.Client;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -8,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using itLabs.Client;
 
 namespace itLabs;
 
@@ -23,12 +23,13 @@ public partial class Page2 : Page
     { "thirdTextBox", "E-mail" }
   };
 
-  private Dictionary<string, string> _userInput = new Dictionary<string, string>();
-  private HttpClient _httpClient;
+  private readonly string serverUri = "https://localhost:7165/api/customer";
 
   private readonly string token = "htfIEhF8E3zOb8SmXBqRCDxxzcLKNHCI2ex2LICyj20";
+  
+  private readonly HttpClient _httpClient;
 
-  private readonly string serverUri = "https://localhost:7165/api/customer";
+  private readonly Dictionary<string, string> _userInput = new();
 
   public Page2()
   {
@@ -40,7 +41,7 @@ public partial class Page2 : Page
   }
 
   /// <summary>
-  ///  Обработка введенных данных при нажатии на кнопку
+  ///   Обработка введенных данных при нажатии на кнопку
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>
@@ -72,7 +73,7 @@ public partial class Page2 : Page
   }
 
   /// <summary>
-  ///  Проверка корректности введённых данных
+  ///   Проверка корректности введённых данных
   /// </summary>
   /// <param name="key"></param>
   /// <param name="textBox"></param>
@@ -126,11 +127,11 @@ public partial class Page2 : Page
 
   private NewCustomerRequest CreateCustomerRequest()
   {
-    _userInput.TryGetValue("firstTextBox", out string? name);
-    _userInput.TryGetValue("secondTextBox", out string? phone);
-    _userInput.TryGetValue("thirdTextBox", out string? mail);
+    _userInput.TryGetValue("firstTextBox", out var name);
+    _userInput.TryGetValue("secondTextBox", out var phone);
+    _userInput.TryGetValue("thirdTextBox", out var mail);
 
-    var userData = new NewCustomerRequest()
+    var userData = new NewCustomerRequest
     {
       Email = mail,
       Name = name,
@@ -141,7 +142,7 @@ public partial class Page2 : Page
   }
 
   /// <summary>
-  ///  Переход на третью страницу
+  ///   Переход на третью страницу
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>
@@ -165,11 +166,10 @@ public partial class Page2 : Page
       var message = "Ошибка при отправке данных";
       ShowMessage(message, Brushes.Red);
     }
-
   }
 
   /// <summary>
-  ///  Отображение сообщения
+  ///   Отображение сообщения
   /// </summary>
   /// <param name="message"></param>
   /// <param name="brush"></param>
@@ -186,7 +186,7 @@ public partial class Page2 : Page
 
 
   /// <summary>
-  ///  Обрабатывает событие получения фокуса пользователя текстовым полем.
+  ///   Обрабатывает событие получения фокуса пользователя текстовым полем.
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>
@@ -202,7 +202,7 @@ public partial class Page2 : Page
   }
 
   /// <summary>
-  ///  Обрабатывает событие потери фокуса пользователя над текстовым полем.
+  ///   Обрабатывает событие потери фокуса пользователя над текстовым полем.
   /// </summary>
   /// <param name="sender"></param>
   /// <param name="e"></param>

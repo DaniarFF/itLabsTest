@@ -93,6 +93,7 @@
                     Foreground="#FF7D7D7D" Canvas.Left="2139" Canvas.Top="1345" TextAlignment="Center"
                     Width="304"
                     Text="RED" />
+                
             </Canvas>
         </Viewbox>
     </Grid>
