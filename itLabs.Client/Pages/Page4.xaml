@@ -13,8 +13,8 @@
             <Canvas Width="2728" Height="1824" Background="#FF121212">
                 
                 <!--Изображения-->
-                <Image Height="1824" Canvas.Left="574" Source="/img5.png" Width="577" />
-                <Image Height="1824" Source="/img6.png" Stretch="Fill" Width="577" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                <Image Height="1824" Canvas.Left="574" Source="/Images/img5.png" Width="577" />
+                <Image Height="1824" Source="/Images/img6.png" Stretch="Fill" Width="577" HorizontalAlignment="Center" VerticalAlignment="Top" />
 
                 <!--Лого IWT-->
                 <Canvas>
@@ -82,8 +82,8 @@
                        LineStackingStrategy="BlockLineHeight" />
         
                 <!--Изображения QR кодов-->
-                <Image Height="497" Canvas.Left="1396" Source="/img8.png" Stretch="Fill" Canvas.Top="803" Width="496"/>
-                <Image Height="496" Canvas.Left="2043" Source="/img9.png" Stretch="Fill" Canvas.Top="803" Width="496" />
+                <Image Height="497" Canvas.Left="1396" Source="/Images/img8.png" Stretch="Fill" Canvas.Top="803" Width="496"/>
+                <Image Height="496" Canvas.Left="2043" Source="/Images/img9.png" Stretch="Fill" Canvas.Top="803" Width="496" />
                 
                 <TextBlock FontSize="45" FontFamily="Montserrat"
                     Foreground="#FF7D7D7D" Canvas.Left="1528" Canvas.Top="1345" TextAlignment="Center"

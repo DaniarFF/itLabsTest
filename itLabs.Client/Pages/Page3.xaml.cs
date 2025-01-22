@@ -45,6 +45,7 @@ public partial class Page3 : Page
     var isValid = true;
 
     foreach (var element in InputField.Children)
+    {
       if (element is TextBox textBox)
       {
         var input = textBox.Text.Trim();
@@ -53,8 +54,9 @@ public partial class Page3 : Page
           _userInput += input;
         else
           isValid = false;
-      }
-
+      } 
+    }
+    
     if (isValid && _userInput == _expectedCode)
     {
       SetTextBoxBorderColor(Brushes.Green);

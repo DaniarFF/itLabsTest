@@ -35,9 +35,9 @@
                 </StackPanel>
 
                 <!--Изображения-->
-                <Image Height="1824" Canvas.Left="2151" Source="/img4.png" Width="577" HorizontalAlignment="Left"
+                <Image Height="1824" Canvas.Left="2151" Source="/Images/img4.png" Width="577" HorizontalAlignment="Left"
                        VerticalAlignment="Center" />
-                <Image Height="1824" Source="/img3.png" Stretch="Fill" Width="577" HorizontalAlignment="Left"
+                <Image Height="1824" Source="/Images/img3.png" Stretch="Fill" Width="577" HorizontalAlignment="Left"
                        Canvas.Left="1574" VerticalAlignment="Center" />
 
                 <!--Лого IWT-->

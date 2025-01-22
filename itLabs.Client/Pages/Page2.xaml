@@ -12,8 +12,8 @@
             <Canvas Width="2728" Height="1824" Background="#FF121212">
 
                 <!--Изображения-->
-                <Image Height="1824" Canvas.Left="577" Source="/img1.png" Width="577" />
-                <Image Height="1824" Source="/img2.png" Stretch="Fill" Width="577" />
+                <Image Height="1824" Canvas.Left="577" Source="/Images/img1.png" Width="577" />
+                <Image Height="1824" Source="/Images/img2.png" Stretch="Fill" Width="577" />
 
                 <!--Лого IWT-->
                 <Canvas>
